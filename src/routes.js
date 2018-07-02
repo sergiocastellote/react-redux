@@ -10,7 +10,7 @@ import PostForm from './containers/PostForm';
 const AppRoutes = () =>
   <App>
     <Switch>
-      <Route exact path="/list" component={AllPost} />
+      <Route exact path="/" component={AllPost} />
       <Route exact path="/form" component={PostForm} />
     </Switch>
   </App>;

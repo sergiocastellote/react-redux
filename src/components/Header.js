@@ -13,7 +13,7 @@ class Header extends Component {
                             <nav id="nav">
                                 <div>
                                     <li><Link to='/form'>New Post</Link></li>
-                                    <li><Link to='/list'>List</Link></li>
+                                    <li><Link to='/'>List</Link></li>
                                 </div>
                             </nav>
                         </div>
