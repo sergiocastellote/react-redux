@@ -6,3 +6,6 @@ To install and configure
 - execute 'npm install'
 - execute 'npm start'
 
+To deploy:
+
+- npm run deploy
