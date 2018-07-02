@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
-// import PostForm from '../containers/PostForm';
-// import AllPost from '../containers/AllPost';
 import Header from './Header';
 import Content from './Content';
-
 
 class App extends Component {
   
@@ -25,4 +21,5 @@ class App extends Component {
     );
   }
 }
+
 export default App;

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { updatePost } from '../actions'
 
-
 class EditComponent extends Component {
+  
   handleEdit = (e) => {
     e.preventDefault();
     const newTitle = this.getTitle.value;
@@ -17,7 +17,9 @@ class EditComponent extends Component {
       data
     }))
   }
+
   render() {
+
     return (
       <div key={this.props.post.id} className="post">
         <form className="form" onSubmit={this.handleEdit}>
@@ -31,4 +33,5 @@ class EditComponent extends Component {
     );
   }
 }
+
 export default connect()(EditComponent);

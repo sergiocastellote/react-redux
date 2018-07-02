@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addPost } from '../actions'
+import { addPost } from '../actions';
+
 class PostForm extends Component {
+
   handleSubmit = (e) => {
     e.preventDefault();
     const title = this.getTitle.value;
@@ -20,7 +22,9 @@ class PostForm extends Component {
     this.getTitle.value = '';
     this.getMessage.value = '';
   }
+
   render() {
+
     return (
       <section id="content">
         <div className="container">
@@ -30,19 +34,18 @@ class PostForm extends Component {
                 <div>
                   <h1 className="post_heading">Create Post</h1>
                   <form className="form" onSubmit={this.handleSubmit} >
-                  <br></br>
-                  <label className="title-form">Title</label>
-                    <input className="form-input" required type="text" ref={(input) => this.getTitle = input}/>
+                    <br></br>
+                    <label className="title-form">Title</label>
+                    <input className="form-input" required type="text" ref={(input) => this.getTitle = input} />
                     <br></br>
                     <label className="title-form">Content</label>
                     <textarea className="form-textarea" required rows="5" ref={(input) => this.getMessage = input}
-                      cols="28"/>
+                      cols="28" />
                     <br></br>
                     <button className="class-button">Create</button>
                   </form>
                 </div>
               </section>
-
             </div>
           </div>
         </div>
@@ -50,4 +53,5 @@ class PostForm extends Component {
     );
   }
 }
+
 export default connect()(PostForm);

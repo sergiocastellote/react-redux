@@ -3,9 +3,10 @@ import { connect } from 'react-redux';
 import Post from './Post';
 import EditComponent from './EditComponent';
 
-
 class AllPost extends Component {
+
   render() {
+
     var partial;
     if (this.props.posts.length > 0) {
       partial = <section>
@@ -19,8 +20,9 @@ class AllPost extends Component {
       </section>
     } else {
       partial = <section>
-      No posts created</section>
+        No posts created</section>
     }
+
     return (
       <section id="content">
         <div className="container">
@@ -31,14 +33,6 @@ class AllPost extends Component {
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
     );
   }
 }
@@ -48,4 +42,5 @@ const mapStateToProps = (state) => {
     posts: state.postReducer
   }
 }
+
 export default connect(mapStateToProps)(AllPost);

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-
 class Header extends Component {
+
     render() {
+
         return (
             <section id="header">
                 <div className="container">
@@ -23,4 +24,5 @@ class Header extends Component {
         );
     }
 }
+
 export default Header;

@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { deletePost, editPost } from '../actions';
+
 class Post extends Component {
+
   render() {
+
     return (
       <div>
         <h3>{this.props.post.title}</h3>
@@ -28,5 +31,6 @@ class Post extends Component {
       </div>
     );
   }
+
 }
 export default connect()(Post);
