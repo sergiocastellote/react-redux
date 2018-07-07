@@ -19,7 +19,6 @@ class EditComponent extends Component {
   }
 
   render() {
-
     return (
       <div key={this.props.post.id} className="post">
         <form className="form" onSubmit={this.handleEdit}>

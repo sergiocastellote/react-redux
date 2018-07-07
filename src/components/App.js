@@ -4,20 +4,21 @@ import Header from './Header';
 import Content from './Content';
 
 class App extends Component {
-  
+
   static propTypes = {
     children: PropTypes.object.isRequired
   };
-  
+
   render() {
 
     const { children } = this.props;
 
     return (
-      <div className="App">
-        <Header />
-        <Content body={children}/>
-      </div>
+        <div id="page-wrapper">
+          <Header />
+          <Content body={children} />
+        </div>
+
     );
   }
 }

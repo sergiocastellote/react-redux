@@ -9,13 +9,11 @@ class Header extends Component {
             <section id="header">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12">
-                            <h1>React & Redux Example</h1>
-                            <nav id="nav">
-                                <div>
-                                    <li><Link to='/form'>New Post</Link></li>
-                                    <li><Link to='/'>List</Link></li>
-                                </div>
+                        <div className="header">
+                            <h1 className="header-title title"><a href="index.html" id="logo">React & Redux Example</a></h1>
+                            <nav className="header-menu" id="nav">
+                                <Link to='/form'>New Post</Link>
+                                <Link to='/'>List</Link>
                             </nav>
                         </div>
                     </div>

@@ -14,10 +14,6 @@ class PostForm extends Component {
       message,
       editing: false
     }
-    //  this.props.dispatch({
-    //  type: 'ADD_POST',
-    //  data
-    //  })
     this.props.dispatch(addPost(data));
     this.getTitle.value = '';
     this.getMessage.value = '';
@@ -36,9 +32,12 @@ class PostForm extends Component {
                   <form className="form" onSubmit={this.handleSubmit} >
                     <br></br>
                     <label className="title-form">Title</label>
+                    <br></br>
                     <input className="form-input" required type="text" ref={(input) => this.getTitle = input} />
                     <br></br>
+                    <br></br>
                     <label className="title-form">Content</label>
+                    <br></br>
                     <textarea className="form-textarea" required rows="5" ref={(input) => this.getMessage = input}
                       cols="28" />
                     <br></br>
