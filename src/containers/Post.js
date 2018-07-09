@@ -4,10 +4,11 @@ import { deletePost, editPost } from '../actions';
 
 class Post extends Component {
 
+  
   render() {
 
     return (
-      <div>
+      <div className="marginPosts">
         <h3>{this.props.post.title}</h3>
         <br></br>
         <p>{this.props.post.message}</p>
@@ -22,12 +23,6 @@ class Post extends Component {
             >Delete</button>
           </div>
         </div>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
       </div>
     );
   }

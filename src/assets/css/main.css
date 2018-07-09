@@ -87,6 +87,10 @@ mark {
     outline:none;
 }
 
+.marginPosts {
+	margin-bottom: 150px;
+}
+
 .post_heading {
     text-align:center;
     font-weight:400;
